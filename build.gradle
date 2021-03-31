@@ -30,8 +30,6 @@ subprojects {
     }
 
     repositories {
-        maven { url "https://repo.spring.io/libs-release" }
-        maven { url "https://repo.spring.io/milestone" }
         mavenCentral()
     }
 
@@ -117,7 +115,7 @@ project(':catalogs-service') {
         testImplementation('org.springframework.boot:spring-boot-starter-test') {
             exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
         }
-        
+
         developmentOnly 'org.springframework.boot:spring-boot-devtools'
     }
 }
